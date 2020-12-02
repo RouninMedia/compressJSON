@@ -1,29 +1,32 @@
 # compressJSON
-compressJSON is a function which Compresses (using z-lib) and then Base-64 Encodes a JSON string. An Ashiva Component.
+The function `compressJSON(json)` compresses (using *z-lib compression*) and then *Base-64 Encodes* any **JSON** string.
 
-# SVG to Data URI
-
-The function `SVGtoDataURI(svg)` converts any SVG into a **Data URI**.
-
-Before it does so, it verifies that the string it has been given to process is a **valid SVG**.
+Before it does so, it verifies that the string it has been given to process is a **valid JSON**.
 
 ______
 
 ## Step 1
 
-The function `SVGtoDataURI(svg)` verifies that the string passed to the function:
+The function `compressJSON(json)` verifies that the string passed to the function:
 
- - has a valid **SVG Namespace**
- - represents **well-formed XML**
+ - represents a valid **JSON** string
 
-If either or both conditions are not met, the `SVGtoDataURI(svg)` function will return a verbose error detailing how the string may be fixed.
+If this condition is not met, the `compressJSON(json)` function will return a verbose error detailing how the string may be fixed.
 
 ## Step 2
 
-If both the conditions above are met, the `SVGtoDataURI(svg)` function returns the validated SVG as a **Data URI**.
+If the condition above is met, the `compressJSON(json)` function returns the validated JSON as a **compressed and Base-64 Encoded JSON string**.
 
 _____
 
-## `SVGtoDataURI(svg)` Function
+## `compressJSON(json)` Function (client-side)
+
+```
+
+```
+
+## `compressJSON(json)` Function (server-side)
+
+```
 
 ```
