@@ -5,7 +5,9 @@ Before it does so, it verifies that the string it has been given to process is a
 
 ______
 
-## Step 1
+## compressJSON Function
+
+### Step 1
 
 The function `compressJSON(json)` verifies that the string passed to the function:
 
@@ -13,19 +15,19 @@ The function `compressJSON(json)` verifies that the string passed to the functio
 
 If this condition is not met, the `compressJSON(json)` function will return a verbose error detailing how the string may be fixed.
 
-## Step 2
+### Step 2
 
 If the condition above is met, the `compressJSON(json)` function returns the validated JSON as a **compressed and Base-64 Encoded JSON string**.
 
 _____
 
-## `compressJSON(json)` Function (client-side)
+### `compressJSON(json)` (client-side) :
 
 ```
 
 ```
 
-## `compressJSON(json)` Function (server-side)
+### `compressJSON(json)` (server-side) :
 
 ```
 
